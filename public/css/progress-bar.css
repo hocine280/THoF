@@ -1,0 +1,10 @@
+.progress-bar-green{
+    background-color : #1acc8d !important; 
+}
+.progress-bar-red{
+    background-color : red !important;
+}
+.text-progress-bar{
+    font-weight : bold; 
+    color : rgba(1, 4, 136, 0.9) !important;
+}

@@ -1,0 +1,44 @@
+.background-header{
+    background-color : rgba(1, 4, 136, 0.9); 
+
+}
+.titre{
+    color : black; 
+    font-family: "Montserrat", sans-serif;
+    font-weight : bold; 
+    text-align : center; 
+    font-size : 20px; 
+}
+.logo{
+    width : 10%;
+}
+.body{
+    background-color: white; 
+    font-family: "Open Sans", sans-serif;
+
+}  
+.label-form{
+    color : black; 
+}  
+.info{
+    color : grey; 
+}
+.creation-form{
+    background-color : #f8f9fa; 
+}
+.input-span{
+    background-color : #f8f9fa; 
+    width : 90%; 
+}
+.signature{
+    margin-top : 50px; 
+    color : black;
+}
+.signature-droite{
+    text-align:right; 
+    margin-right : 150px; 
+}
+.input-span-demande{
+    margin-bottom : 10px; 
+    margin-top:-15px;
+}

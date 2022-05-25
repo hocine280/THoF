@@ -1,0 +1,223 @@
+/*
+------------ Contenu de ce fichier CCS ------------ 
+1. General
+2. Boucle de chargement
+3. Bouton de retour en haut de la page 
+4. Header
+5. Formulaire de connexion
+    5.1. Message d'erreur
+---------------------------------------------------
+*/
+
+/*--------------------------------------------------------------
+1. General
+--------------------------------------------------------------*/
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    background:  linear-gradient(207deg, #1acc8d, rgba(1, 4, 136, 0.9));;
+}  
+a {
+    color: #1acc8d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #34e5a6;
+    text-decoration: none;
+}
+
+h3{
+    font-family: "Montserrat", sans-serif;
+}
+
+/*--------------------------------------------------------------
+2. Boucle de chargement
+--------------------------------------------------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #1acc8d;
+    border-top-color: #d2f9eb;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+
+@keyframes animate-preloader {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+
+/*--------------------------------------------------------------
+4. Header
+--------------------------------------------------------------*/
+#header {
+    height: 80px;
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+    background: rgba(1, 4, 136, 0.9);
+}
+#header.header-transparent {
+    background: transparent;
+}
+#header.header-scrolled {
+    background: rgba(1, 4, 136, 0.9);
+    height: 60px;
+}
+#header .logo h1 {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+}
+#header .logo h1 a, #header .logo h1 a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+#header .logo img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+5.0. Formulaire de connexion
+--------------------------------------------------------------*/
+.card{
+    border-radius: 1rem;
+}
+.animated{
+    animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+.button-login{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #1acc8d;
+}
+.button-login:hover{
+    background: #17b57d;
+    color : white; 
+}
+h1{
+    font-weight : 700; 
+}
+.img-container{
+    padding-top:130px; 
+    padding-left: 30px;
+}
+.fonts{
+    font-family: "Montserrat", sans-serif; 
+}
+
+.form-thof{
+    border:none; 
+    border-bottom : 2px solid rgba(1, 4, 136, 0.9); 
+    outline:none;
+}
+.form-width{
+    width:100%; 
+}
+.form-thof:focus{
+    border-bottom : 2px solid #1acc8d; 
+    color : #1acc8d; 
+    transition : 0.3s; 
+}
+.form-thof:focus::-webkit-input-placeholder{
+    color :#1acc8d; 
+    transition: 0.3s;
+}
+input:focus, input.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.password {
+    position: relative;
+}
+.password > a{
+    position:absolute; 
+    top:12px; 
+    right :15px; 
+}
+.img-presentation-login{
+    border-radius: 1rem 0 0 1rem;
+}
+
+/*--------------------------------------------------------------
+5.1. Message d'erreur 
+--------------------------------------------------------------*/
+.error p{
+    color : #dc3545; 
+}
+.invalid-error{
+    border-bottom : 2px solid #dc3545; 
+}
+.invalid-feedback{
+    text-align: left;
+}
+.invalid-feedback span{
+    font-size : 12px; 
+}
+.error-password{
+    font-size : 12px; 
+    color : #dc3545; 
+    text-align : left; 
+    margin-top : 0.45rem; 
+    margin-bottom : 0; 
+    height : 21px; 
+}
+.ombre-disable {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}

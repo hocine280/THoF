@@ -1,0 +1,34 @@
+.alert-success-alt { 
+    border-color: #19B99A;
+    background: #1acc8d;
+    color: #fff; 
+    border-radius : 10px; 
+    padding : 0.5rem 0.5rem !important; 
+    border : none;
+  }
+  .alert-danger-alt { 
+    border-color: red;
+    background: red;
+    color: #fff; 
+    border-radius : 10px; 
+    padding : 0.5rem 0.5rem !important; 
+    border : none;
+  }
+
+  .icon-close{
+    color : white; 
+    font-size : 12px; 
+  }
+  .icon-close:hover{
+    color :rgba(1, 4, 136, 0.9); 
+  }
+  .btn{
+    color : white !important; 
+  }
+  button:focus, input.alert-success-alt:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }

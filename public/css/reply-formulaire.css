@@ -1,0 +1,15 @@
+.icon-reply{
+    font-size: 40px;
+}
+.icon-red{
+  color:red; 
+  font-size:30px !important;
+}
+.accordion-button:not(.collapsed){
+    color : black; 
+    background-color : white; 
+  }
+  .accordion-button:focus{
+    border-color : #1acc8d; 
+    box-shadow : 0 0 0 0.25rem rgb(26 204 141 / 25%); 
+  }

@@ -1,0 +1,232 @@
+body{
+    background-color: #f8f9fa;
+}
+
+/*--------------------------------------------------------------
+1. BreadCrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+    padding: 20px 0;
+    background-color: #fafaff;
+    min-height: 40px;
+    margin-top: 80px;
+    box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%), 0 1px 10px 0 rgb(0 0 0 / 6%);
+  }
+  @media (max-width: 992px) {
+    .breadcrumbs {
+      margin-top: 64px;
+    }
+  }
+  .breadcrumbs h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+  }
+  @media (max-width: 992px) {
+    .breadcrumbs h2 {
+      margin: 0 0 10px 0;
+    }
+  }
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  .breadcrumbs ol li + li {
+    padding-left: 10px;
+  }
+  .breadcrumbs ol li + li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #6c757d;
+    content : ">";
+  }
+  @media (max-width: 950px) {
+    .breadcrumbs .d-flex {
+      display: block !important;
+    }
+    .breadcrumbs ol {
+      display: block;
+    }
+    .breadcrumbs ol li {
+      display: inline-block;
+    }
+    .margin-top-mobile{
+        margin-top :10px; 
+    }
+    .margin-top-breadcrumbs{
+      margin-top : 1.5rem; 
+    }
+  }
+  .link{
+      color : black;
+  }
+  .sans-vert:hover{
+      color : rgba(1, 4, 136, 0.9); 
+  }
+  .active{
+      color : #1acc8d; 
+  }
+
+  .menuItem{
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgba(1, 4, 136, 0.9);
+    display : none;
+  }
+  .menuItem > li > button{
+    color : white;
+  }
+  .menuItem > li > button:hover{
+    color : white; 
+  }
+
+  /** Création formulaire **/
+  .creation-form{
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+  }
+
+  .button-green{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #1acc8d;
+    margin-right: 20px;
+  }
+  .button-green:hover{
+      background: #17b57d;
+      color : white; 
+  }
+
+  .button-red{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #E50B0B;
+  }
+  .button-red:hover{
+    background: #CA0707;
+    color : white; 
+  }
+
+  .button-blue{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: rgba(1, 4, 136, 0.9);
+    margin-right: 20px;
+  }
+  .button-download-size{
+    font-size: 14px; 
+  }
+  .button-blue:hover{
+      background: rgba(1, 4, 100, 0.9);
+      color : white; 
+  }
+
+
+  .form-thof{
+      border:none; 
+      border-bottom : 2px solid rgba(1, 4, 136, 0.9); 
+      outline:none;
+  }
+  .form-width{
+      width:100%; 
+  }
+  .form-thof:focus{
+      border-bottom : 2px solid #1acc8d; 
+      color : #1acc8d; 
+      transition : 0.3s; 
+  }
+  .form-thof:focus::-webkit-input-placeholder{
+    color :#1acc8d; 
+    transition: 0.3s;
+  }
+  input:focus, input.form-control:focus {
+      outline:none !important;
+      outline-width: 0 !important;
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+  }
+  .label-form{
+    font-size:12px;
+  }
+
+@media(max-width: 950px){
+  .value-option{
+    margin-bottom: 10px;
+  }
+  .button-green{
+    margin-bottom: 10px;
+  }
+}
+
+input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+}
+input[type=radio]>label{
+  margin-left : 0px !important; 
+}
+input[type=radio] {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  border: 1px solid #1acc8d;
+}
+input[type="radio"]:checked {
+  content :'✕'; 
+  background: #1acc8d;
+  color : white; 
+  margin:0px;
+  position: relative;
+}
+
+.optionCapitalize{
+  text-transform : capitalize; 
+}
+
+.span{
+  background-color: none !important;
+}
+.fichier-extension{
+  color : red; 
+}
+
+.button-pdf{
+  text-align:right ; 
+}
+
+.icon-section{
+  color : #1acc8d !important; 
+  font-weight : bold !important; 
+  font-size : 35px; 
+}

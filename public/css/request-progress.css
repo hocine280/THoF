@@ -1,0 +1,31 @@
+.icon-reply{
+    font-size: 40px;
+}
+.icon-red{
+  color:red; 
+  font-size:30px !important;
+}
+.accordion-button:not(.collapsed){
+    color : black; 
+    background-color : white; 
+  }
+  .accordion-button:focus{
+    border-color : #1acc8d; 
+    box-shadow : 0 0 0 0.25rem rgb(26 204 141 / 25%); 
+  }
+.nb-demande{
+    background-color :#1acc8d;
+    border-radius: 50%;
+    margin-right:10px;
+}
+.nb-demande>span{
+    margin: 15px 10px 15px 10px;
+    color : white; 
+    font-weight: bold;
+    font-size:20px; 
+}
+.nb-demande-info{
+  background-color: rgba(1, 4, 136, 0.9);
+  color : white; 
+  border-radius : 1rem !important;
+}

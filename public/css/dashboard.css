@@ -1,0 +1,109 @@
+  /** Création de formulaire **/
+  .icon-section{
+    color : #1acc8d !important; 
+    font-weight : bold !important; 
+    font-size : 25px; 
+  }
+  .icon-section-red{
+    color : red !important; 
+    font-weight : bold !important; 
+    font-size : 25px;
+  }
+  .text-partie-dashboard{
+    color : black; 
+    font-size: 25px;
+    margin-bottom : 0px; 
+  }
+  .text-partie-demande-creation{
+    color : grey; 
+    font-size : 15px; 
+    margin-bottom : 0px; 
+  }
+  @media(min-width:950px){
+    .text-partie-demande-creation{
+      margin-top : 10px; 
+    }
+  }
+  .card:hover .text-partie-dashboard{
+    color :rgba(1, 4, 136, 0.9); 
+  }
+  .card:hover{
+    /* background-color: #fafaff; */
+  }
+  @media(max-width:950px){
+    .text-partie-dashboard{
+      font-size: 15px; 
+      margin-top: 5px;
+      margin-left : 10px; 
+      margin-bottom : 0px;
+    }
+  }
+  .chat{
+    background-color: #f8f9fa;
+    border-radius: 20px;
+  }
+  .active-chat{
+    background-color: #1acc8d;
+  }
+  .active-form{
+    background-color: #f8f9fa; 
+    color : black;
+  }
+  .active-chat p{
+    color:white;
+  }
+  .active-chat i{
+    color:white;
+  }
+  .nom-chat{
+    font-weight: bold;
+    margin-bottom : 0px;
+  }
+  .date{
+    padding-right:0px;
+  }
+  .text-date{
+    text-align:right;
+    margin-bottom: 0px;
+    font-style: italic;
+    color : rgba(1, 4, 136, 0.9);
+  } 
+  .info-chat{
+    padding-right: 0px;
+  }
+  .number-chat{
+    background-color: #1acc8d;
+    border-radius: 50%;
+    text-align: center;
+    color : white;
+    font-size: 20px;
+    margin-bottom : 0px;
+    margin-right : 15px; 
+    margin-left : 15px; 
+    margin-top: 13px;
+  }
+  .button-green{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #1acc8d;
+    margin-right: 20px;
+  }
+  .button-green:hover{
+      background: #17b57d;
+      color : white; 
+  }
+
+  .page-item.active .page-link{
+    background : #1acc8d !important; 
+    border-color: #1acc8d !important;
+  }
+  .page-link{
+    color : black;
+  }

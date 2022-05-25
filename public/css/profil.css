@@ -1,0 +1,239 @@
+body{
+  background-color : #f8f9fa; 
+}
+/*--------------------------------------------------------------
+1. BreadCrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+    padding: 20px 0;
+    background-color: #fafaff;
+    min-height: 40px;
+    margin-top: 80px;
+    box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%), 0 1px 10px 0 rgb(0 0 0 / 6%);
+  }
+  @media (max-width: 992px) {
+    .breadcrumbs {
+      margin-top: 64px;
+    }
+  }
+  .breadcrumbs h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+  }
+  @media (max-width: 992px) {
+    .breadcrumbs h2 {
+      margin: 0 0 10px 0;
+    }
+  }
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  .breadcrumbs ol li + li {
+    padding-left: 10px;
+  }
+  .breadcrumbs ol li + li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #6c757d;
+    content : ">";
+  }
+  @media (max-width: 950px) {
+    .breadcrumbs .d-flex {
+      display: block !important;
+    }
+    .breadcrumbs ol {
+      display: block;
+    }
+    .breadcrumbs ol li {
+      display: inline-block;
+    }
+    .margin-top-mobile{
+        margin-top :10px; 
+    }
+    .margin-top-breadcrumbs{
+      margin-top : 1.5rem; 
+    }
+  }
+  .link{
+      color : black;
+  }
+  .sans-vert:hover{
+      color : rgba(1, 4, 136, 0.9); 
+  }
+  .active{
+      color : #1acc8d; 
+  }
+
+/*--------------------------------------------------------------
+2. Information du profil
+--------------------------------------------------------------*/
+
+.card{
+    border-radius : 1.5rem; 
+}
+.border{
+    border : none !important;
+}
+.form-thof{
+    border:none; 
+    border-bottom : 2px solid rgba(1, 4, 136, 0.9); 
+    outline:none;
+}
+.form-width{
+    width:100%; 
+}
+.form-thof:focus{
+    border-bottom : 2px solid #1acc8d; 
+    color : #1acc8d; 
+    transition : 0.3s; 
+}
+.form-thof:focus::-webkit-input-placeholder{
+    color :#1acc8d; 
+    transition: 0.3s;
+}
+input:focus, input.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+
+.form-group label{
+    font-size: 12px; 
+}
+option{
+    color :rgba(1, 4, 136, 0.9);
+}
+select:focus, select.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.button-login{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #1acc8d;
+}
+.button-login:hover{
+  background: #17b57d;
+  color : white; 
+}
+.text-right{
+  text-align: center; 
+}
+.alert-success-alt { 
+  border-color: #19B99A;
+  background: #1acc8d;
+  color: #fff; 
+  border-radius : 10px; 
+  padding : 0.5rem 0.5rem !important; 
+  margin-bottom : 0px !important; 
+  border : none;
+}
+.icon-close{
+  color : white; 
+  font-size : 12px; 
+}
+.icon-close:hover{
+  color :rgba(1, 4, 136, 0.9); 
+}
+.btn{
+  color : white !important; 
+}
+button:focus, input.alert-success-alt:focus {
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+/* Gestion de l'oeil permettant de voir le contenu d'un champ password */
+.password {
+  position: relative;
+}
+.password > a{
+  position:absolute; 
+  top:35px; 
+  right :11px; 
+}
+
+.text-bleu{
+  color :rgba(1, 4, 136, 0.9); 
+}
+
+.button-enable{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #1acc8d;
+}
+.button-enable:hover{
+  background: #17b57d;
+  color : white; 
+}
+
+.button-disable{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #E50B0B;
+}
+.button-disable:hover{
+  background: #CA0707;
+  color : white; 
+}
+
+
+/* Browser Session */
+.browser-session-font-size{
+  font-size : 20px; 
+}
+
+.error-password{
+  font-size : 13px; 
+  color : #dc3545; 
+  text-align : left; 
+  margin-top : 0.45rem; 
+  margin-bottom : 0; 
+  height : 21px; 
+}
+.invalid-error{
+  border-bottom : 2px solid #dc3545; 
+}
+
+.role{
+  color : #1acc8d; 
+}
+
