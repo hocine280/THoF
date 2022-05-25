@@ -59,5 +59,5 @@ THoF est doté d'une multitude de fonctionnalités tel que :
 <br>
 
 ---
-***Projet réalisé par HADID Hocine (@hadi0005) et CHEMIN Pierre (@chem0016)***
+***Projet réalisé par HADID Hocine (@hocine280) et CHEMIN Pierre (@PietroCookie)***
 
