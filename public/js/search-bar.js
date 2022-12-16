@@ -37,7 +37,7 @@ form.addEventListener('submit', function(e){
             Object.entries(data)[0][1].forEach(element => {
                 var date = new Date(element.created_at); 
                 formulaire.innerHTML += `
-                <a href="/~hadi0005/thof/public/demande/show/${element.id}">
+                <a href="public/demande/show/${element.id}">
                     <div class="container card mt-4">
                         <div class="row">
                             <div class="col-md-12 border p-3">

@@ -46,7 +46,7 @@ $('#creationFormulaire').on('submit',function(e){
         processData: false,
         success:function(response){
             // $('#successMsg').show();
-            window.location.href = '/~hadi0005/thof/public/form/my-form'; 
+            window.location.href = '/form/my-form'; 
             // if(titreMsgError != null || descriptionMsgError != null){
             //     titreMsgError.style.display="none"; 
             //     descriptionMsgError.style.display="none"; 

@@ -25,7 +25,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/form/create', 'FormulaireController@create')->name('form.create')->middleware('adminProf'); 
     Route::post('/form/store', 'FormulaireController@store')->name('form.store'); 
     Route::get('/form/all-form', 'FormulaireController@index')->name('form.all-list'); 
-    Route::get('/form/my-form', 'FormulaireController@myForm')->name('form.my-list')->middleware('adminProf'); 
+    Route::get('/form/my-form', 'FormulaireController@myForm')->name('form.my-list'); 
     Route::get('/form/show/{id}', 'FormulaireController@show')->name('form.show'); 
     Route::delete('/form/destroy/{id}', 'FormulaireController@destroy')->name('form.destroy'); 
 }); 

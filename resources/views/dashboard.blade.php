@@ -28,7 +28,7 @@
 
         @if(auth()->user()->role_id == 2 || auth()->user()->role_id == 3)
             <!-- Créer un formulaire -->
-                <div class="container" data-aos="zoom-in">
+                <div class="container" data-aos="">
                     <a href="{{ route('form.create') }}">
                         <div class="container card mt-5">
                             <div class="row">
@@ -47,7 +47,7 @@
 
 
             <!-- Créer un formulaire -->
-                <div class="container" data-aos="zoom-in">
+                <div class="container" data-aos="">
                     <a href="{{ route('form.my-list') }}">
                         <div class="container card mt-4">
                             <div class="row">
@@ -67,7 +67,7 @@
 
         @if (auth()->user()->role_id == 2 || auth()->user()->role_id == 3)
             <!-- Voir ses demandes en cours et toutes ses demandes -->
-            <div class="container" data-aos="zoom-in">
+            <div class="container" data-aos="">
                 <div class="row">
                     <div class="col-md-6">
                         <a href="{{ route('demande.index') }}">
@@ -103,7 +103,7 @@
             </div>
             <!-- Fin voir ses demandes en cours et toutes ses demandes-->
         @elseif (auth()->user()->role_id == 1 || auth()->user()->role_id == 4)
-            <div class="container" data-aos="zoom-in">
+            <div class="container" data-aos="">
                 <a href="{{ route('demande.index') }}">
                     <div class="container card mt-4">
                         <div class="row">
@@ -118,7 +118,7 @@
                     </div>
                 </a>
             </div>
-            <div class="container" data-aos="zoom-in">
+            <div class="container" data-aos="">
                 <a href="{{ route('demande.request-all') }}">
                     <div class="container card mt-4">
                         <div class="row">
@@ -137,7 +137,7 @@
 
         @if(auth()->user()->role_id == 3)
             <!-- Voir la totalité des demandes du site -->
-            <div class="container" data-aos="zoom-in">
+            <div class="container" data-aos="">
                 <a href="{{ route('demande.all-demande-admin') }}">
                     <div class="container card mt-4">
                         <div class="row">
@@ -157,7 +157,7 @@
 
         @if (auth()->user()->role_id == 2 || auth()->user()->role_id == 3)
             <!-- Réponse à mes formulaires -->
-            <div class="container" data-aos="zoom-in">
+            <div class="container" data-aos="">
                 <a href="{{ route('reply-formulaire.index') }}">
                     <div class="container card mt-4">
                         <div class="row">
@@ -175,7 +175,7 @@
             <!-- Fin réponse à mes formulaires -->
         @endif
 
-        <div class="container" data-aos="zoom-in">
+        <div class="container" data-aos="">
             <div class="row">
 
                 {{-- <div class="col-md-6">
